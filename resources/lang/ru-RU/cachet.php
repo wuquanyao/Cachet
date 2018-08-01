@@ -14,7 +14,7 @@ return [
     'components' => [
         'last_updated' => 'Последнее обновление :timestamp',
         'status'       => [
-            0 => 'Неизвестно',
+            0 => 'Unknown',
             1 => 'Работает',
             2 => 'Падение производительности',
             3 => 'Перебои в работе',
@@ -29,11 +29,11 @@ return [
     'incidents' => [
         'none'         => 'Без происшествий',
         'past'         => 'Последние инциденты',
-        'stickied'     => 'Закрепленные инциденты',
-        'scheduled'    => 'Плановые работы',
+        'stickied'     => 'Stickied Incidents',
+        'scheduled'    => 'Maintenance',
         'scheduled_at' => ', запланированы :timestamp',
-        'posted'       => 'Опубликовано :timestamp',
-        'posted_at'    => 'Опубликовано в :timestamp',
+        'posted'       => 'Posted :timestamp',
+        'posted_at'    => 'Posted at :timestamp',
         'status'       => [
             1 => 'Проводим анализ проблемы',
             2 => 'Причина определена',
@@ -45,17 +45,17 @@ return [
     // Schedule
     'schedules' => [
         'status' => [
-            0 => 'Будущие',
-            1 => 'Выполняется',
-            2 => 'Завершено',
+            0 => 'Upcoming',
+            1 => 'In Progress',
+            2 => 'Complete',
         ],
     ],
 
     // Service Status
     'service' => [
         'good'  => '[0,1]System operational|[2,*]All systems are operational',
-        'bad'   => '[0,1] В системе есть неполадки|[2,Inf] В некоторых системах есть неполадки',
-        'major' => '[0,1] Система не работает|[2,Inf] Некоторые системы не работают',
+        'bad'   => '[0,1]The system is experiencing issues|[2,*]Some systems are experiencing issues',
+        'major' => '[0,1]The system is experiencing major issues|[2,*]Some systems are experiencing major issues',
     ],
 
     'api' => [
@@ -75,13 +75,14 @@ return [
 
     // Subscriber
     'subscriber' => [
-        'subscribe'   => 'Подпишитесь, чтобы получать информацию об изменениях',
-        'unsubscribe' => 'Отписаться от :link',
-        'button'      => 'Подписаться',
-        'manage'      => [
+        'subscribe'           => 'Подпишитесь, чтобы получать информацию об изменениях',
+        'unsubscribe'         => 'Unsubscribe',
+        'button'              => 'Подписаться',
+        'manage_subscription' => 'Manage subscription',
+        'manage'              => [
             'no_subscriptions' => 'Вы подписаны на все изменения.',
             'my_subscriptions' => 'Вы подписаны на следующие изменения.',
-            'manage_at_link'   => 'Управляйте своими подписками в :link',
+            'manage_at_link'   => 'Manage your subscriptions at :link',
         ],
         'email' => [
             'subscribe'          => 'Подписка на рассылку об изменениях.',
@@ -131,7 +132,7 @@ return [
     // Other
     'home'            => 'Главный экран',
     'powered_by'      => 'Работает на <a href="https://cachethq.io" class="links">Cachet</a>.',
-    'timezone'        => 'Время показано по :timezone.',
+    'timezone'        => 'Times are shown in :timezone.',
     'about_this_site' => 'Об этом сайте',
     'rss-feed'        => 'RSS',
     'atom-feed'       => 'Atom',

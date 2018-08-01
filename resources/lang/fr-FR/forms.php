@@ -49,12 +49,12 @@ return [
         'name'               => 'Nom',
         'status'             => 'Statut',
         'component'          => 'Composant',
-        'component_status'   => 'Statut des composants',
+        'component_status'   => 'Component Status',
         'message'            => 'Message',
         'message-help'       => 'Vous pouvez également utiliser le format Markdown.',
         'occurred_at'        => 'Quand s\'est produit cet incident ?',
         'notify_subscribers' => 'Notifier les abonnés ?',
-        'notify_disabled'    => 'Pour cause de maintenance planifiée, les notifications sur cet incident ou ses composants sont supprimées.',
+        'notify_disabled'    => 'Due to scheduled maintenance, notifications about this incident or its components will be suppressed.',
         'visibility'         => 'Visibilité de l\'incident',
         'stick_status'       => 'Incident épinglé',
         'stickied'           => 'Épinglé',
@@ -154,10 +154,11 @@ return [
             'about-this-page'                       => 'À propos de cette page',
             'days-of-incidents'                     => 'Combien de jours d\'incidents à montrer ?',
             'time_before_refresh'                   => 'Status page refresh rate (in seconds)',
+            'major_outage_rate'                     => 'Major outage threshold (in %)',
             'banner'                                => 'Image d\'en-tête',
             'banner-help'                           => "It's recommended that you upload files no bigger than 930px wide",
             'subscribers'                           => 'Permettre aux personnes de s\'inscrire aux notifications par e-mail ?',
-            'suppress_notifications_in_maintenance' => 'Supprimer les notifications lorsqu\'un incident se produit au cours de la période de maintenance ?',
+            'suppress_notifications_in_maintenance' => 'Suppress notifications when incident occurs during maintenance period?',
             'skip_subscriber_verification'          => 'Ne pas vérifier les utilisateurs ? (Attention, vous pourriez être spammé)',
             'automatic_localization'                => 'Traduire automatiquement votre page de statut dans la langue du visiteur ?',
             'enable_external_dependencies'          => 'Activer les dépendances tierces (Google Fonts, Trackers, etc...)',
@@ -177,8 +178,10 @@ return [
             'incident-date-format' => 'Format de la date de l\'incident',
         ],
         'security' => [
-            'allowed-domains'      => 'Domaines autorisés',
-            'allowed-domains-help' => 'Séparés par des virgules. Le domaine défini ci-dessus est automatiquement autorisé par défaut.',
+            'allowed-domains'           => 'Domaines autorisés',
+            'allowed-domains-help'      => 'Séparés par des virgules. Le domaine défini ci-dessus est automatiquement autorisé par défaut.',
+            'always-authenticate'       => 'Always authenticate',
+            'always-authenticate-help'  => 'Require login to view any Cachet page',
         ],
         'stylesheet' => [
             'custom-css' => 'Feuille de style personnalisée',
@@ -218,7 +221,7 @@ return [
         ],
         'team' => [
             'description' => 'Invitez les membres de votre équipe en entrant leurs adresses e-mail ici.',
-            'email'       => 'E-mail #:id',
+            'email'       => 'Your Team Members Email Address',
         ],
     ],
 
@@ -238,7 +241,7 @@ return [
     'remove'         => 'Enlever',
     'invite'         => 'Inviter',
     'signup'         => 'Inscription',
-    'manage_updates' => 'Gérer les mises à jour',
+    'manage_updates' => 'Manage Updates',
 
     // Other
     'optional' => '* Optionnel',

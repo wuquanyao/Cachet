@@ -22,7 +22,7 @@ return [
         'site_locale'      => 'Pilih Bahasa',
         'enable_google2fa' => 'Aktifkan Otentikasi Dua Faktor dengan Google',
         'cache_driver'     => 'Driver Cache',
-        'queue_driver'     => 'Antre Driver',
+        'queue_driver'     => 'Queue Driver',
         'session_driver'   => 'Driver Sesi',
         'mail_driver'      => 'Driver Email',
         'mail_host'        => 'Host Email',
@@ -41,7 +41,7 @@ return [
         'invalid-token' => 'Token tidak benar',
         'cookies'       => 'Mohon aktifkan cookies untuk login.',
         'rate-limit'    => 'Melebihi batas.',
-        'remember_me'   => 'Ingat saya',
+        'remember_me'   => 'Remember me',
     ],
 
     // Incidents form fields
@@ -52,7 +52,7 @@ return [
         'component_status'   => 'Status Komponen',
         'message'            => 'Pesan',
         'message-help'       => 'Anda juga bisa menggunakan Markdown.',
-        'occurred_at'        => 'Kapan insiden ini terjadi?',
+        'occurred_at'        => 'When did this incident occur?',
         'notify_subscribers' => 'Beritahu subscriber',
         'notify_disabled'    => 'Karena adanya pemeliharaan, notifikasi insiden ini atau komponennya akan diprioritaskan.',
         'visibility'         => 'Tampilan Insiden',
@@ -73,8 +73,8 @@ return [
         'status'       => 'Status',
         'message'      => 'Pesan',
         'message-help' => 'Anda juga bisa menggunakan Markdown.',
-        'scheduled_at' => 'Kapan pemeliharaan ini dijadwalkan?',
-        'completed_at' => 'Kapan pemeliharaan ini selesai?',
+        'scheduled_at' => 'When is this maintenance scheduled for?',
+        'completed_at' => 'When did this maintenance complete?',
         'templates'    => [
             'name'     => 'Nama',
             'template' => 'Template',
@@ -135,9 +135,9 @@ return [
         'default_view'             => 'Tampilan default',
         'threshold'                => 'Dalam rentang berapa menit antara poin metrik?',
         'visibility'               => 'Visibilitas',
-        'visibility_authenticated' => 'Terlihat oleh pengguna terautentikasi',
-        'visibility_public'        => 'Terlihat oleh semua orang',
-        'visibility_hidden'        => 'Selalu tersembunyi',
+        'visibility_authenticated' => 'Visible to authenticated users',
+        'visibility_public'        => 'Visible to everybody',
+        'visibility_hidden'        => 'Always hidden',
 
         'points' => [
             'value' => 'Nilai',
@@ -154,6 +154,7 @@ return [
             'about-this-page'                       => 'Tentang halaman ini',
             'days-of-incidents'                     => 'Berapa hari insiden akan ditampilkan?',
             'time_before_refresh'                   => 'Status page refresh rate (in seconds)',
+            'major_outage_rate'                     => 'Major outage threshold (in %)',
             'banner'                                => 'Gambar Banner',
             'banner-help'                           => "It's recommended that you upload files no bigger than 930px wide",
             'subscribers'                           => 'Bolehkan pengunjung mendaftar notifikasi email?',
@@ -177,8 +178,10 @@ return [
             'incident-date-format' => 'Format Waktu Insiden',
         ],
         'security' => [
-            'allowed-domains'      => 'Domain yang dibolehkan',
-            'allowed-domains-help' => 'Pisahkan dengan koma. Domain yang ada di atas otomatis akan dibolehkan.',
+            'allowed-domains'           => 'Domain yang dibolehkan',
+            'allowed-domains-help'      => 'Pisahkan dengan koma. Domain yang ada di atas otomatis akan dibolehkan.',
+            'always-authenticate'       => 'Always authenticate',
+            'always-authenticate-help'  => 'Require login to view any Cachet page',
         ],
         'stylesheet' => [
             'custom-css' => 'Stylesheet Kustom',

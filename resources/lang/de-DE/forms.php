@@ -49,12 +49,12 @@ return [
         'name'               => 'Name',
         'status'             => 'Status',
         'component'          => 'Komponente',
-        'component_status'   => 'Komponentenstatus',
+        'component_status'   => 'Component Status',
         'message'            => 'Nachricht',
         'message-help'       => 'Sie können auch Markdown verwenden.',
         'occurred_at'        => 'Wann ist dieser Vorfall aufgetreten?',
         'notify_subscribers' => 'Abonnenten benachrichtigen',
-        'notify_disabled'    => 'Aufgrund von Wartungsarbeiten werden Benachrichtigungen über diesen Vorfall oder seiner Komponenten unterdrückt.',
+        'notify_disabled'    => 'Due to scheduled maintenance, notifications about this incident or its components will be suppressed.',
         'visibility'         => 'Ereignis Sichtbarkeit',
         'stick_status'       => 'Vorfall anpinnen',
         'stickied'           => 'Angepinnt',
@@ -154,10 +154,11 @@ return [
             'about-this-page'                       => 'Über diese Seite',
             'days-of-incidents'                     => 'Wie viele Tage mit Vorfällen sollen gezeigt werden?',
             'time_before_refresh'                   => 'Status page refresh rate (in seconds)',
+            'major_outage_rate'                     => 'Major outage threshold (in %)',
             'banner'                                => 'Banner Bild',
             'banner-help'                           => "It's recommended that you upload files no bigger than 930px wide",
             'subscribers'                           => 'Personen die Anmeldung für E-Mail-Benachrichtigung erlauben?',
-            'suppress_notifications_in_maintenance' => 'Unterdrücken Sie Benachrichtigungen, wenn ein Vorfall während des Zeitraum der Wartungsarbeiten auftritt?',
+            'suppress_notifications_in_maintenance' => 'Suppress notifications when incident occurs during maintenance period?',
             'skip_subscriber_verification'          => 'Verifizierung der Nutzer überspringen? (Warnung, du könntest gespammt werden)',
             'automatic_localization'                => 'Die Status-Seite automatisch auf die Sprache deiner Besucher anpassen?',
             'enable_external_dependencies'          => 'Drittanbieter Abhängigkeiten erlauben (Google Schriftarten, Tracker, etc...)',
@@ -177,8 +178,10 @@ return [
             'incident-date-format' => 'Ereignis Uhrzeit Format',
         ],
         'security' => [
-            'allowed-domains'      => 'Erlaubte Domains',
-            'allowed-domains-help' => 'Durch Kommata trennen. Die oben genannte Domain ist standardmäßig erlaubt.',
+            'allowed-domains'           => 'Erlaubte Domains',
+            'allowed-domains-help'      => 'Durch Kommata trennen. Die oben genannte Domain ist standardmäßig erlaubt.',
+            'always-authenticate'       => 'Always authenticate',
+            'always-authenticate-help'  => 'Require login to view any Cachet page',
         ],
         'stylesheet' => [
             'custom-css' => 'Benutzerdefiniertes Stylesheet',
@@ -218,7 +221,7 @@ return [
         ],
         'team' => [
             'description' => 'Invite your team members by entering their email addresses here.',
-            'email'       => 'Email #:id',
+            'email'       => 'Your Team Members Email Address',
         ],
     ],
 
@@ -238,7 +241,7 @@ return [
     'remove'         => 'Entfernen',
     'invite'         => 'Einladen',
     'signup'         => 'Registrieren',
-    'manage_updates' => 'Updates verwalten',
+    'manage_updates' => 'Manage Updates',
 
     // Other
     'optional' => '* optional',

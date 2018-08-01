@@ -53,7 +53,7 @@ return [
 
     // Service Status
     'service' => [
-        'good'  => '[0,1]System operational|[2,*]All systems are operational',
+        'good'  => '[0,1]Systeem operationeel|[2,*]Alle systemen zijn operationeel',
         'bad'   => '[0,1] Het systeem ondervindt momenteel problemen |[2,Inf] Sommige systemen ondervinden momenteel problemen',
         'major' => '[0,1] Het systeem ondervindt momenteel een grote storing|[2,Inf] Sommige systemen ondervinden momenteel een grote storing',
     ],
@@ -75,10 +75,11 @@ return [
 
     // Subscriber
     'subscriber' => [
-        'subscribe'   => 'Abonneer voor de meest recente updates',
-        'unsubscribe' => 'Meld je af via :link',
-        'button'      => 'Abonneren',
-        'manage'      => [
+        'subscribe'           => 'Abonneer voor de meest recente updates',
+        'unsubscribe'         => 'Unsubscribe',
+        'button'              => 'Abonneren',
+        'manage_subscription' => 'Manage subscription',
+        'manage'              => [
             'no_subscriptions' => 'Je bent momenteel geabonneerd op alle updates.',
             'my_subscriptions' => 'Je bent momenteel geabonneerd op de volgende updates.',
             'manage_at_link'   => 'Beheer uw abonnementen op: link',
